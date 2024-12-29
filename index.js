@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Serve the index.html file when someone visits the root route
 app.get('/', (req, res) => {
   // Path to the index.html file in the same folder as index.js
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
