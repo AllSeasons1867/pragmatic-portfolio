@@ -1,0 +1,19 @@
+/* Center the body content */
+body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    height: 100vh;            /* Full viewport height */
+    margin: 0;                /* Remove default margin */
+}
+
+/* Make the .main div take up 60% of the body width */
+.main {
+    width: 60%;
+    text-align: center;       /* Optionally center the text inside .main */
+}
+
+/* Ensure the image is responsive */
+img {
+    width: 100%;
+}
