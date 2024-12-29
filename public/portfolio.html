@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Pragmatic Portfolio</title>
@@ -18,9 +19,41 @@
                 <li><a href="./performance.html">The Performance</a></li>
             </ul>   
         </div>
-        <div class="portfolio">
-            <img src="./images/pragport.jpg" alt="" style="width: 50%;">
-        </div>
+        <canvas id="myChart"></canvas>
     </div>
+    <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Total Stock Market', 'Total Bond Market', 'Total Commodity Market', 'Total Crypto Market', 'Treasury Bills'],
+            datasets: [{
+              label: 'allocation percentage',
+              data: [20, 20, 20, 20, 20],
+              backgroundColor: ['#D9E5D9', '#C1D6F7', '#F5E7D3', '#E7D8C4', '#D1E4D2'],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'right', // Legend on the right side
+                align: 'center',   // Center the legend vertically
+                labels: {
+                  boxWidth: 20, // Width of the box next to the label
+                  padding: 15,  // Padding between legend items
+                }
+              }
+            },
+            layout: {
+              padding: {
+                right: 50 // Ensures space for the legend to avoid clipping
+              }
+            }
+          }
+        });
+    </script>
 </body>
 </html>

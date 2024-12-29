@@ -1,7 +1,8 @@
 /* Flexbox on the body to center everything */
-body.body {
+body {
     display: flex;
     justify-content: center;     /* Horizontally center */
+    align-items: flex-start;         /* Vertically center */
     height: 100vh;               /* Full viewport height */
     margin: 0;                   /* Remove default margin */
     font-family: Arial, sans-serif; /* Default font family */
@@ -58,6 +59,10 @@ body.body {
 
 .menu a:hover {
     color: #007BFF; /* Change color on hover */
+}
+
+#myChart {
+    margin-top: 50px;
 }
 
 /* Media Query for larger screens (desktop/laptop) */
