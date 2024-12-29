@@ -1,11 +1,84 @@
-/* CSS */
+/* Flexbox on the body to center everything */
+body {
+    display: flex;
+    justify-content: center;     /* Horizontally center */
+    align-items: center;         /* Vertically center */
+    height: 100vh;               /* Full viewport height */
+    margin: 0;                   /* Remove default margin */
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+/* Wrapper to center the content */
+.content-wrapper {
+    text-align: center;  /* Center text and inline elements */
+    display: flex;
+    flex-direction: column; /* Stack the logo and menu vertically */
+    align-items: center; /* Horizontally center the content */
+    justify-content: center; /* Vertically center the content */
+}
+
+/* Logo styling */
 .logo-head {
-    display: flex;               /* Enable Flexbox */
-    justify-content: center;     /* Horizontally center the content */
-    height: 20vh;               /* Optional: fill the viewport height */
+    margin-bottom: 30px; /* Space between the logo and the menu */
 }
 
 .logo-head img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto;    /* Maintain aspect ratio */
+    max-width: 100%;   /* Ensure the image is responsive */
+    height: auto;      /* Maintain aspect ratio */
+    max-height: 20vh;  /* Limit logo size based on viewport height for mobile */
+}
+
+/* Menu styling */
+.menu ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    display: flex;  /* Display the menu items horizontally */
+    justify-content: center;  /* Center the menu items */
+}
+
+.menu li {
+    margin: 0 15px;  /* Add some space between the menu items */
+}
+
+.menu a {
+    text-decoration: none; /* Remove the underline */
+    font-size: 18px;  /* Set a default font size */
+    color: #333;  /* Set a text color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.menu a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Media Query for larger screens (desktop/laptop) */
+@media (min-width: 768px) {
+    /* Logo resizing for larger screens */
+    .logo-head img {
+        max-height: 25vh; /* Increase the logo size on desktop/laptop screens */
+    }
+
+    /* Menu items font size for larger screens */
+    .menu a {
+        font-size: 22px; /* Larger font size for menu items */
+    }
+
+    /* Adjust margin between logo and menu */
+    .logo-head {
+        margin-bottom: 50px; /* Increase space between logo and menu */
+    }
+}
+
+/* Media Query for very large screens (large desktop or wide viewports) */
+@media (min-width: 1200px) {
+    /* Further adjust logo size */
+    .logo-head img {
+        max-height: 30vh; /* Even larger logo on wide screens */
+    }
+
+    /* Further adjust menu font size */
+    .menu a {
+        font-size: 24px; /* Increase font size for larger screens */
+    }
 }
