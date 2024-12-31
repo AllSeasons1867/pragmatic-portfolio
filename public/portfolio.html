@@ -23,7 +23,7 @@
     </div>
     <script>
         const ctx = document.getElementById('myChart');
-      
+
         new Chart(ctx, {
           type: 'doughnut',
           data: {
@@ -31,7 +31,7 @@
             datasets: [{
               label: 'allocation percentage',
               data: [20, 20, 20, 20, 20],
-              backgroundColor: ['#D1B085', '#A5B9A5', '#B7D1A1', '#7A99D6', '#A3B8A3'],
+              backgroundColor: ['#6C9A8B', '#F1C27D', '#D85F3D', '#4F7D9E', '#A7C5BD'],
               borderWidth: 1
             }]
           },
@@ -44,6 +44,9 @@
                 labels: {
                   boxWidth: 20, 
                   padding: 15,
+                  font: {
+                    size: 18
+                  }
                 }
               }
             },
