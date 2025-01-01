@@ -86,6 +86,11 @@ body.body {
     margin-top: 50px;
 }
 
+#performanceTable {
+    text-align: left;
+    margin: 50px;
+}
+
 /* Media Query for mobile screens */
 @media (max-width: 767px) {
     .insights {
