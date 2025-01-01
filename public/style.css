@@ -62,10 +62,6 @@ body.body {
     color: #007BFF; /* Change color on hover */
 }
 
-#myChart {
-    margin-top: 50px;
-}
-
 /* Styling for .insights */
 .insights {
     max-width: 800px;    /* Limit the width to 800px (adjust as needed) */
@@ -74,6 +70,21 @@ body.body {
     margin-top: 30px;    /* Space between insights and menu */
     text-align: justify; /* Optional: Improve text alignment */
     box-sizing: border-box; /* Include padding in the element's total width */
+
+}
+
+/* Styling for #formula */
+#formula {
+    font-size: 4rem;            /* Increase the font size for the fraction */
+    display: block;             /* Make the formula a block element */
+    text-align: center;         /* Center the contents inside the block element */
+    margin: 0 auto;             /* Center the block element itself */
+    width: fit-content;         /* Ensure the width only takes up as much space as needed */
+}
+
+
+#myChart {
+    margin-top: 50px;
 }
 
 /* Media Query for mobile screens */
