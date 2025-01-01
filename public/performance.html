@@ -1,1 +1,74 @@
-<h1>The Performance</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pragmatic Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="content-wrapper"> 
+        <div class="logo-head">
+            <a href="/"><img src="./images/praglogo.png" alt="Primary website logo that says Pragmatic Portfolio."></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./portfolio.html">The Portfolio</a></li>
+                <li><a href="./insights.html">The Insights</a></li>
+                <li><a href="./performance.html">The Performance</a></li>
+            </ul>   
+        </div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ['2018','2019','2020','2021','2022','2023','2024'],
+            datasets: [{
+              label: 'Growth of $10,000',
+              data: [10000,12149,21332,29327,24317,32729,41231],
+              backgroundColor: ['#6C9A8B'],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+                y: {
+                    ticks: {
+                        callback: function(value, index, ticks) {
+                            return '$' + value;
+                        }
+                    }
+                }
+            }, 
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'bottom', 
+                align: 'center',   
+                labels: {
+                  boxWidth: 20, 
+                  padding: 15,
+                  font: {
+                    size: 18
+                  }
+                }
+              }
+            },
+            layout: {
+              padding: {
+
+              }
+            }
+          }
+        });
+    </script>
+</body>
+</html>
+
+
+
