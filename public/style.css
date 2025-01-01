@@ -8,6 +8,16 @@ body {
     font-family: Arial, sans-serif; /* Default font family */
 }
 
+body.body {
+    display: flex;
+    justify-content: center;     /* Horizontally center */
+    align-items: center;         /* Vertically center */
+    height: 100vh;               /* Full viewport height */
+    margin: 0;                   /* Remove default margin */
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+
 /* Wrapper to center the content */
 .content-wrapper {
     text-align: center;  /* Center text and inline elements */
