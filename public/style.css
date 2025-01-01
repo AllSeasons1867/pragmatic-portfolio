@@ -8,15 +8,6 @@ body {
     font-family: Arial, sans-serif; /* Default font family */
 }
 
-body.body {
-    display: flex;
-    justify-content: center;     /* Horizontally center */
-    align-items: center;         /* Vertically center */
-    height: 100vh;               /* Full viewport height */
-    margin: 0;                   /* Remove default margin */
-    font-family: Arial, sans-serif; /* Default font family */
-}
-
 /* Wrapper to center the content */
 .content-wrapper {
     text-align: center;  /* Center text and inline elements */
@@ -65,6 +56,25 @@ body.body {
     margin-top: 50px;
 }
 
+/* Styling for .insights */
+.insights {
+    max-width: 800px;    /* Limit the width to 800px (adjust as needed) */
+    width: 100%;         /* Ensure it takes up the full width of the parent */
+    padding: 0 20px;     /* Add padding to left and right for better readability */
+    margin-top: 30px;    /* Space between insights and menu */
+    text-align: justify; /* Optional: Improve text alignment */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 767px) {
+    .insights {
+        max-width: 100%;    /* Make sure the container doesn't stretch too wide */
+        padding: 0 15px;    /* Add padding to the sides for mobile views */
+        margin: 20px 10px;   /* Add more margin on top for more space between text and menu */
+    }
+}
+
 /* Media Query for larger screens (desktop/laptop) */
 @media (min-width: 768px) {
     /* Logo resizing for larger screens */
@@ -81,6 +91,11 @@ body.body {
     .logo-head {
         margin-bottom: 50px; /* Increase space between logo and menu */
     }
+
+    /* Adjust .insights max-width for larger screens */
+    .insights {
+        max-width: 900px; /* Increase the max width on larger screens */
+    }
 }
 
 /* Media Query for very large screens (large desktop or wide viewports) */
@@ -93,5 +108,10 @@ body.body {
     /* Further adjust menu font size */
     .menu a {
         font-size: 24px; /* Increase font size for larger screens */
+    }
+
+    /* Further adjust .insights max-width */
+    .insights {
+        max-width: 1000px; /* Even larger max-width on very large screens */
     }
 }
