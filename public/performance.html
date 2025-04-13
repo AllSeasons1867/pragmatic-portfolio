@@ -22,44 +22,44 @@
         <canvas id="myChart"></canvas>
         <div id="performanceTable">
             <table>
-                <th>Portfolio Performance (Dec 2017 - Dec 2024)</th>
+                <th>Portfolio Performance (Dec 2022 - Dec 2024)</th>
                 <tr>
                     <td>Start Balance</td>
-                    <td>$10,000.00</td>
+                    <td>$10,000</td>
                 </tr>
                 <tr>
                     <td>End Balance</td>
-                    <td>$18,285.00</td>
+                    <td>$12,177</td>
                 </tr>
                 <tr>
                     <td>Annualized Return (CAGR)</td>
-                    <td>9.00%</td>
+                    <td>10.35%</td>
                 </tr>
                 <tr>
                     <td>Standard Deviation</td>
-                    <td>9.30%</td>
+                    <td>7.17%</td>
                 </tr>
                 <tr>
                     <td>Best Year</td>
-                    <td>24.14%</td>
+                    <td>11.11%</td>
                 </tr>
                 <tr>
                     <td>Worst Year</td>
-                    <td>-8.79%</td>
+                    <td>9.60%</td>
                 </tr>
                 <tr>
                     <td>Maximum Drawdown</td>
-                    <td>-13.26%</td>
+                    <td>-3.65%</td>
                 </tr>
                 <tr>
                     <td>Sharpe Ratio</td>
-                    <td>0.73</td>
+                    <td>0.71</td>
                 </tr>
                 <tr>
                     <td>Sortino Ratio</td>
-                    <td>1.26</td>
+                    <td>1.16</td>
                 </tr>
-            </table>            
+            </table>                     
         </div>        
     </div>
     <script>
@@ -68,10 +68,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ['2017','2018','2019','2020','2021','2022','2023','2024'],
+            labels: ['2022','2023','2024'],
             datasets: [{
               label: 'Growth of $10,000',
-              data: [10000,9436,10733,13324,14949,13636,15712,18285],
+              data: [10000,10960,12177],
               backgroundColor: ['#6C9A8B'],
               borderWidth: 1
             }]
