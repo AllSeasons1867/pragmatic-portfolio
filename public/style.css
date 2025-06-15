@@ -68,9 +68,13 @@ body.body {
     width: 100%;         /* Ensure it takes up the full width of the parent */
     padding: 0 20px;     /* Add padding to left and right for better readability */
     margin-top: 30px;    /* Space between insights and menu */
-    text-align: justify; /* Optional: Improve text alignment */
+    text-align: start; /* Optional: Improve text alignment */
     box-sizing: border-box; /* Include padding in the element's total width */
 
+}
+
+.insights li {
+    padding-bottom: 5px;
 }
 
 /* Styling for #formula */
