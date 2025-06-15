@@ -74,7 +74,7 @@ body.body {
 }
 
 .insights * {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 /* Styling for #formula */
@@ -102,6 +102,12 @@ body.body {
         padding: 0 15px;    /* Add padding to the sides for mobile views */
         margin: 20px 10px;   /* Add more margin on top for more space between text and menu */
     }
+
+    .blurbs {
+        width: 400px;
+        text-align: start;
+        padding: 25px 0px 25px 0px;
+    }
 }
 
 /* Media Query for larger screens (desktop/laptop) */
@@ -125,6 +131,12 @@ body.body {
     .insights {
         max-width: 900px; /* Increase the max width on larger screens */
     }
+
+    .blurbs {
+        width: 600px;
+        text-align: start;
+        padding: 25px 0px 25px 0px;
+    }
 }
 
 /* Media Query for very large screens (large desktop or wide viewports) */
@@ -143,6 +155,17 @@ body.body {
     .insights {
         max-width: 1000px; /* Even larger max-width on very large screens */
     }
+
+    .blurbs {
+        width: 800px;
+        text-align: start;
+        padding: 25px 0px 25px 0px;
+    }
+
+}
+
+#myChart {
+    padding-bottom: 25px;
 }
 
 

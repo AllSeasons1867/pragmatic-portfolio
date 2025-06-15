@@ -14,13 +14,23 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="./portfolio.html">The Portfolio</a></li>
+                <li><a href="./portfolio.html">The Model</a></li>
                 <li><a href="./insights.html">The Implementation</a></li>
                 <li><a href="./performance.html">The Performance</a></li>
             </ul>   
         </div>
-        <canvas id="myChart"></canvas>
 
+        <p class="blurbs">
+          The All-Terrain Portfolio is a resilient investment strategy designed to perform across all economic conditions—recession, prosperity, inflation, and deflation. By allocating to cash, equities, commodities, and bonds, it ensures that at least one asset thrives no matter the economic climate.
+        </p>
+        <img src="./images/model.png" style="width: 450px;" alt="">
+        
+        
+        <p class="blurbs">
+          Building on this macroeconomic foundation, a fully diversified portfolio strategically allocates assets to align with each economic environment. The result is a balanced mix designed to minimize risk and maximize resilience through all phases of the economic cycle as follows.
+        </p>
+        
+        <canvas id="myChart"></canvas>
       
 
       </div>
@@ -33,7 +43,7 @@
         new Chart(ctx, {
           type: 'doughnut',
           data: {
-            labels: ['20% Cash And Cash Equivalents','20% Long-Term Investment-Grade Bonds','20% Global Factor-Tilted Equities', '10% Global Capitalization-Weighted Equities', '10% Long/Flat Commodity Futures               ', '10% Precious Metals                                                 ', '10% Cryptocurrencies'],
+            labels: ['20% Cash And Cash Equivalents                            ','20% Long-Term Investment-Grade Bonds                   ','20% Global Factor-Tilted Equities                ', '10% Global Capitalization-Weighted Equities                     ', '10% Long/Flat Commodity Futures                      ', '10% Precious Metals                                                 ', '10% Cryptocurrencies                            '],
             datasets: [{
               label: 'Allocation Percentage',
               data: [20, 20, 20, 10, 10, 10, 10],
