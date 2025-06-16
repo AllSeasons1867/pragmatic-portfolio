@@ -86,10 +86,6 @@ body.body {
     width: fit-content;         /* Ensure the width only takes up as much space as needed */
 }
 
-#myChart {
-    margin-top: 0px;
-}
-
 #performanceTable {
     text-align: left;
     margin: 50px;
@@ -164,8 +160,14 @@ body.body {
 
 }
 
-#myChart {
+#myChart.portfolio {
     padding-bottom: 50px;
+    max-width: 500px;
+}
+
+#myChart.performance {
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 
