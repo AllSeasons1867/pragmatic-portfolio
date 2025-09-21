@@ -26,11 +26,11 @@
         <img src="./images/model.png" style="width: 425px;" alt="">
         
         
-        <!-- <p class="blurbs">
+        <p class="blurbs">
           Building on this macroeconomic foundation, the fully diversified portfolio strategically allocates its capital so that each asset contributes equally to the investor's total risk budget. The result is a balanced mix designed to minimize volatility while maximizing returns through all possible economic vicissitudes. The precise portfolio breakdown is as follows. 
         </p>
         
-        <canvas class="portfolio" id="myChart"></canvas> -->
+        <canvas class="portfolio" id="myChart"></canvas>
       
 
       </div>
@@ -43,11 +43,11 @@
         new Chart(ctx, {
           type: 'doughnut',
           data: {
-            labels: ['47.5% Global Government Bond Ladder                      ','30% Global Factor-Tilted Equities                  ','7.5% Long/Flat Commodities                      ','7.5% Precious Metals                                                 ','7.5% Cryptocurrencies                              '],
+            labels: ['30% Global Multi-Sector Bond Ladder                      ','30% Global Factor-Tilted Equities                  ','30% Diversified Commodities                ','10% Cash                     '],
             datasets: [{
               label: 'Allocation Percentage',
-              data: [47.5, 30, 7.5, 7.5, 7.5],
-              backgroundColor: ['#7A9F92', '#E1C085', '#707db8','#A5749C','#5B4B49'],
+              data: [30, 30, 30, 10],
+              backgroundColor: ['#7A9F92', '#E1C085', '#707db8','#A5749C'],
               borderWidth: 1
             }]
           },
