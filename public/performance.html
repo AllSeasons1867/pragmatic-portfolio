@@ -22,44 +22,44 @@
         <canvas class="performance" id="myChart"></canvas>
         <div id="performanceTable">
 <table>
-  <th>Portfolio Performance (Dec 2022 - Dec 2024)</th>
+  <th>Portfolio Performance (Dec 2021 - Dec 2024)</th>
   <tr>
     <td>Start Balance</td>
     <td>$10,000</td>
   </tr>
   <tr>
     <td>End Balance</td>
-    <td>$15,038</td>
+    <td>$13,146</td>
   </tr>
   <tr>
     <td>Annualized Return (CAGR)</td>
-    <td>22.63%</td>
+    <td>9.55%</td>
   </tr>
   <tr>
     <td>Standard Deviation</td>
-    <td>11.64%</td>
+    <td>12.05%</td>
   </tr>
   <tr>
     <td>Best Year</td>
-    <td>24.24%</td>
+    <td>23.75%</td>
   </tr>
   <tr>
     <td>Worst Year</td>
-    <td>21.04%</td>
+    <td>-11.61%</td>
   </tr>
   <tr>
     <td>Maximum Drawdown</td>
-    <td>-4.51%</td>
+    <td>-14.89%</td>
   </tr>
   <tr>
     <td>Sharpe Ratio</td>
-    <td>1.39</td>
+    <td>0.50</td>
   </tr>
   <tr>
     <td>Sortino Ratio</td>
-    <td>3.08</td>
+    <td>0.82</td>
   </tr>
-</table>                                                       
+</table>                                                      
         </div>        
     </div>
     <script>
@@ -68,10 +68,10 @@
         new Chart(ctx, {
           type: 'line',
           data: {
-            labels: ['2022','2023','2024'],
+            labels: ['2021','2022','2023','2024'],
             datasets: [{
               label: 'Growth of $10,000',
-              data: [10000,12104,15038],
+              data: [10000,8839,10623,13146],
               backgroundColor: ['#6C9A8B'],
               borderWidth: 1
             }]
