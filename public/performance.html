@@ -22,34 +22,34 @@
         <canvas class="performance" id="myChart"></canvas>
         <div id="performanceTable">
 <table>
-  <th>Portfolio Performance (Dec 2021 - Dec 2024)*</th>
+  <th>Portfolio Performance (Dec 2021 - Dec 2024)</th>
   <tr>
     <td>Start Balance</td>
     <td>$10,000</td>
   </tr>
   <tr>
     <td>End Balance</td>
-    <td>$12,573</td>
+    <td>$12,569</td>
   </tr>
   <tr>
     <td>Annualized Return (CAGR)</td>
-    <td>7.93%</td>
+    <td>7.92%</td>
   </tr>
   <tr>
     <td>Standard Deviation</td>
-    <td>10.62%</td>
+    <td>10.56%</td>
   </tr>
   <tr>
     <td>Best Year</td>
-    <td>20.14%</td>
+    <td>18.67%</td>
   </tr>
   <tr>
     <td>Worst Year</td>
-    <td>-10.75%</td>
+    <td>-9.79%</td>
   </tr>
   <tr>
     <td>Maximum Drawdown</td>
-    <td>-13.89%</td>
+    <td>-13.45%</td>
   </tr>
   <tr>
     <td>Sharpe Ratio</td>
@@ -59,9 +59,8 @@
     <td>Sortino Ratio</td>
     <td>0.66</td>
   </tr>
-</table> 
+</table>
         </div>      
-        <p style="font-size: x-small;">*Performance figures assume no usage of the 5% Optional Speculative Allocation, with this balance allocated equally to value and momentum equities instead.</p>  
     </div>
     <script>
         const ctx = document.getElementById('myChart');
@@ -72,7 +71,7 @@
             labels: ['2021','2022','2023','2024'],
             datasets: [{
               label: 'Growth of $10,000',
-              data: [10000,8925,10466,12573],
+              data: [10000,9021,10592,12569],
               backgroundColor: ['#6C9A8B'],
               borderWidth: 1
             }]
