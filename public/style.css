@@ -73,6 +73,10 @@ body.body {
 
 }
 
+.insights h2 {
+    text-align: center;
+}
+
 .insights * {
     padding-bottom: 10px;
 }
