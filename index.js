@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path'); // Required to handle file paths
 
 const app = express();
-const port = process.env.PORT || 3001; // Use environment port or default to 3000
+const port = process.env.PORT || 3000; // Use environment port or default to 3000
 
 // Serve static files (like CSS, JS) from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
